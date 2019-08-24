@@ -1,7 +1,5 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
-
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -153,64 +151,59 @@ h5 {
   margin-bottom: 15px;
 }
 
-
-
 .container {
   width: 880px;
   /* TB LR */
   margin: 0 auto;
 }
 
-@media( max-width: 800px ) {
-    .container { 
-        width: 75%;
-    }  
-   }
+@media (max-width: 800px) {
+  .container {
+    width: 75%;
+  }
+}
 
-   @media( max-width: 500px ) {
-    .container { 
-        width: 100%;
-    }  
-   }
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
 
 /* header */
 
 /*created new header tag with flex added*/
 
-
-@media( max-width: 800px ) {
-    header {
-    flex-direction: column-reverse; 
-    align-items: center;
-    }
-  }
-
+@media (max-width: 800px) {
   header {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+header {
   display: flex;
   justify-content: space-evenly;
 }
 
 header nav {
-    display: flex;
-    width: 600px;
-    vertical-align: top;
-    margin-top: 35px;
-    justify-content: space-between;
-  }
-  
-
-@media( max-width: 800px ) {
-    header nav {
-    width: 100%; 
-    }
+  display: flex;
+  width: 600px;
+  vertical-align: top;
+  margin-top: 35px;
+  justify-content: space-between;
 }
 
-@media( max-width: 500px ) {
-    header nav {
-    flex-direction: column;
-    align-items: center
+@media (max-width: 800px) {
+  header nav {
+    width: 100%;
   }
+}
 
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 header nav a {
@@ -219,17 +212,17 @@ header nav a {
   text-decoration: none;
 }
 
-@media( max-width: 500px ) {
-    header nav a { 
-    font-size: 20px;  
+@media (max-width: 500px) {
+  header nav a {
+    font-size: 20px;
     padding: 20px;
     border-bottom: 1px solid black;
     width: 100%;
     text-align: center;
-    }
-    header nav a:first-child  {
-        border-top: 1px solid black; 
-}
+  }
+  header nav a:first-child {
+    border-top: 1px solid black;
+  }
 }
 
 header nav a:hover {
@@ -244,35 +237,29 @@ header nav a:last-child {
   margin-right: 0;
 }
 
-@media( max-width: 800px )  {
-   .logo { 
-    width: 25%; 
-    
-}
+@media (max-width: 800px) {
+  .logo {
+    width: 25%;
+  }
 }
 
-@media( max-width: 500px )  {
-    .logo { 
-     width: 50%; 
-     
- }
- }
+@media (max-width: 500px) {
+  .logo {
+    width: 50%;
+  }
+}
 
 header .logo {
-
   margin-top: 25px;
   display: flex;
 }
 
-
 /* cta */
 
 .cta {
-    display: flex;
-    justify-content: space-evenly; 
+  display: flex;
+  justify-content: space-evenly;
 }
-
-
 
 .cta .cta-text {
   vertical-align: top;
@@ -283,13 +270,11 @@ header .logo {
   width: 475px;
 }
 
-@media( max-width: 500px ) {
-      .cta .cta-text {
-          margin-top: 45px;
-      }    
+@media (max-width: 500px) {
+  .cta .cta-text {
+    margin-top: 45px;
+  }
 }
-
-
 
 /*added flex to .cta .cta-text button */
 
@@ -318,15 +303,14 @@ header .logo {
   display: flex;
 }
 
-
 .cta img {
   margin-top: 69px;
 }
 
-@media( max-width: 800px ) {
-    .cta img {
-     display: none;
-   }
+@media (max-width: 800px) {
+  .cta img {
+    display: none;
+  }
 }
 .main-content {
   border-top: 1px solid black;
@@ -337,27 +321,28 @@ header .logo {
 .main-content .top-content {
   display: flex;
   justify-content: space-between;
-  flex-direction: column; 
+}
+@media (max-width: 500px) {
+  .main-content .top-content {
+    flex-direction: column;
+  }
 }
 
 /*added flex to .main-content .top-content .text-content*/
 
 .main-content .top-content .text-content {
-  
 }
 
 .main-content .top-content .text-content {
   width: 45%;
 }
 
-@media( max-width: 500px ) {
-    .main-content .top-content .text-content {
-      width: 100%;
-      margin: 10px;
-       
-
-    }
-   }
+@media (max-width: 500px) {
+  .main-content .top-content .text-content {
+    width: 100%;
+    margin: 10px;
+  }
+}
 .main-content .top-content .text-content:last-child {
   margin-right: 0;
 }
@@ -367,30 +352,28 @@ header .logo {
   width: 100%;
 }
 
-
-
 .main-content .bottom-content {
   margin-top: 37px;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
-   
 }
-
-
+@media (max-width: 500px) {
+  .main-content .bottom-content {
+    flex-direction: column;
+  }
+}
 
 /*added flex to .main-content .bottom-content .text-content*/
 
 .main-content .bottom-content .text-content {
   width: 30%;
-  
 }
-@media( max-width: 500px ) {
-    .main-content .bottom-content .text-content { 
-     width: 100%;
-     margin: 10px;
-    }  
-   }
+@media (max-width: 500px) {
+  .main-content .bottom-content .text-content {
+    width: 100%;
+    margin: 10px;
+  }
+}
 .main-content .bottom-content .text-content:last-child {
   margin-right: 0;
 }
@@ -411,6 +394,5 @@ footer {
   font-size: 14px;
 }
 body {
-    background-color:  #e0f7fa;
-
-} 
+  background-color: #e0f7fa;
+}
