@@ -167,6 +167,12 @@ h5 {
     }  
    }
 
+   @media( max-width: 500px ) {
+    .container { 
+        width: 100%;
+    }  
+   }
+
 /* header */
 
 /*created new header tag with flex added*/
@@ -184,25 +190,46 @@ h5 {
   justify-content: space-evenly;
 }
 
+header nav {
+    display: flex;
+    width: 600px;
+    vertical-align: top;
+    margin-top: 35px;
+    justify-content: space-between;
+  }
+  
+
 @media( max-width: 800px ) {
     header nav {
-        width: 75%
-
+    width: 100%; 
     }
 }
 
-header nav {
-  display: flex;
-  width: 600px;
-  vertical-align: top;
-  margin-top: 35px;
-  justify-content: space-between;
+@media( max-width: 500px ) {
+    header nav {
+    flex-direction: column;
+    align-items: center
+  }
+
 }
 
 header nav a {
   font-size: 14px;
   color: gray;
   text-decoration: none;
+}
+
+@media( max-width: 500px ) {
+    header nav a { 
+    font-size: 20px;  
+    padding: 20px;
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
+    }
+    header nav a:first-child  {
+        border-top: 1px solid black; 
+}
 }
 
 header nav a:hover {
@@ -224,6 +251,12 @@ header nav a:last-child {
 }
 }
 
+@media( max-width: 500px )  {
+    .logo { 
+     width: 50%; 
+     
+ }
+ }
 
 header .logo {
 
@@ -239,6 +272,8 @@ header .logo {
     justify-content: space-evenly; 
 }
 
+
+
 .cta .cta-text {
   vertical-align: top;
   font-size: 77px;
@@ -247,6 +282,14 @@ header .logo {
   padding: 0px 75px 0px 75px;
   width: 475px;
 }
+
+@media( max-width: 500px ) {
+      .cta .cta-text {
+          margin-top: 45px;
+      }    
+}
+
+
 
 /*added flex to .cta .cta-text button */
 
@@ -294,7 +337,7 @@ header .logo {
 .main-content .top-content {
   display: flex;
   justify-content: space-between;
-
+  flex-direction: column; 
 }
 
 /*added flex to .main-content .top-content .text-content*/
@@ -307,6 +350,14 @@ header .logo {
   width: 45%;
 }
 
+@media( max-width: 500px ) {
+    .main-content .top-content .text-content {
+      width: 100%;
+      margin: 10px;
+       
+
+    }
+   }
 .main-content .top-content .text-content:last-child {
   margin-right: 0;
 }
@@ -322,6 +373,8 @@ header .logo {
   margin-top: 37px;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+   
 }
 
 
@@ -332,7 +385,12 @@ header .logo {
   width: 30%;
   
 }
-
+@media( max-width: 500px ) {
+    .main-content .bottom-content .text-content { 
+     width: 100%;
+     margin: 10px;
+    }  
+   }
 .main-content .bottom-content .text-content:last-child {
   margin-right: 0;
 }
